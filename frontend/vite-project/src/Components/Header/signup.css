@@ -1,0 +1,32 @@
+form{
+    
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    color: whitesmoke;
+   
+    border-width: 2px;
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-items: left;
+}
+input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-self: right;
+}
+h4{
+    color: whitesmoke;
+}
+div{
+   
+    
+    margin-top: 150px;
+    text-align: center;
+}

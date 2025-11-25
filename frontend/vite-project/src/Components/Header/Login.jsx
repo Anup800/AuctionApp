@@ -18,7 +18,8 @@ function Login() {
    const token = resData.data;
    console.log(token );
    const decodeResult = jwtDecode(token);
-   localStorage.setItem("role",decodeResult.role)
+   localStorage.setItem("role",decodeResult.role);
+   localStorage.setItem("name", decodeResult.name);
    const role = decodeResult.role;
    localStorage.setItem("authToken",token);
    if(role === "admin") navigate("/admin");

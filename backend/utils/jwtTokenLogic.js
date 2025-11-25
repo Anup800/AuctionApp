@@ -9,7 +9,7 @@ export async function generateJwtToken(user) {
     //     throw new Error('Invalid user data for token generation');
     // }
     console.log("jwt token geneartor");
-    const payload = { userId: user.id, email: user.email ,role: user.userRole};
+    const payload = { name: user.name, email: user.email ,role: user.userRole};
     const token =  jwt.sign(payload,jwtSecret, { expiresIn: '1h' });
     return token;
 }

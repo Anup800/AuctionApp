@@ -74,13 +74,13 @@ const fetchPlayers = async () => {
     const index = cI >0 ?cI-1: players.length-1;
     setCurrentIndex(index);
   
-  socket.emit("palyer-detail",players[index])
+  socket.emit("player-detail",players[index])
   }
   const goNext=()=>{
     const cI = currentIndex;
     const index = cI < players.length-1 ? Number(cI+1) :0;
     setCurrentIndex(index);
-  socket.emit("palyer-detail",players[index])
+  socket.emit("player-detail",players[index])
   }
   return (
     <div style={{ padding: "20px" }}>

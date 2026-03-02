@@ -15,7 +15,7 @@ function BidderDashBoard() {
       console.log("Received message:", userMessage);
       setMessages((prev) => [...prev, { text: userMessage.message, sender: userMessage.name }]);
     });
-    socket.on("palyer-detail", (player) => {
+    socket.on("player-detail", (player) => {
       console.log("Received message for player:", player);
       setPlayer(player);
     }); 

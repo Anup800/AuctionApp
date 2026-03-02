@@ -30,12 +30,12 @@ io.on("connection", (socket) => {
   console.log("A user connected:", socket.id);
      socket.on("user-Message", (userMessage) => {console.log(`new user message from id ${socket.id}`,userMessage );
      socket.broadcast.emit('message',userMessage); })
-     socket.on("palyer-detail",(player) =>{
-        console.log("backend received palyer view",player)
-     socket.broadcast.emit("palyer-detail",player)});
+     socket.on("player-detail",(player) =>{
+        console.log("backend received player view",player)
+     socket.broadcast.emit("player-detail",player)});
 
      socket.on("bid-amount",(amount)=>{
-        socket.broadcast.emit(amount);
+        socket.broadcast.emit("bid-amount", amount);
     })
 });
 

@@ -7,5 +7,5 @@ export const playerRouter = express.Router();
     const players = await getAllPlayers();
     console.log("here is players Route");
     console.log(players);
-    res.send(players).status(201);
+    res.status(200).send(players);
  })
